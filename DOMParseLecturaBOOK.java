@@ -70,6 +70,7 @@ public class DOMParseLecturaBOOK {
                 e.printStackTrace(); //Imprime el stack trace para depurar el error.
                 System.err.println(e); //Imprime el error en la consola.
         }
+        
     }
 }
 
