@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Catalogo>
+    <Libro id="bk101" isbn="01">
+        <Autor>Garghentini, Davide</Autor>
+        <Titulo>XML Developer's Guide</Titulo>
+        <Genero>Computer</Genero>
+        <Precio>44.95</Precio>
+        <FechaPublicacion>2000-10-01</FechaPublicacion>
+        <Descripcion>An in-depth look at creating applications with XML.</Descripcion>
+    </Libro>
+    <Libro id="bk102" isbn="02">
+        <Autor>Garcia, Debra</Autor>
+        <Titulo>Midnight Rain</Titulo>
+        <Genero>Fantasy</Genero>
+        <Precio>5.95</Precio>
+        <FechaPublicacion>2000-12-16</FechaPublicacion>
+        <Descripcion>A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world.</Descripcion>
+    </Libro>
+</Catalogo>
