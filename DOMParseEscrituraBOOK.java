@@ -51,9 +51,10 @@ public class DOMParseEscrituraBOOK {
         libro.setAttributeNode(attr);
 
         //NOTA: Aqui se podrían crear más atributos para el elemento libro de la misma forma 
-        attr = doc.createAttribute("isbn");
-        attr.setValue("01");
-        libro.setAttributeNode(attr);
+        Attr attr3 = doc.createAttribute("isbn");
+        //attr = doc.createAttribute("isbn");
+        attr3.setValue("01");
+        libro.setAttributeNode(attr3);
 
         //**** **** 3.2 Se crean hijos del elemento libro, para ello:
         Element autor=doc.createElement("Autor");
@@ -138,6 +139,16 @@ public class DOMParseEscrituraBOOK {
         //La siguiente línea se utiliza para configurar el formato de salida de un documento XML cuando se utiliza un transformador
         //esta línea establece que la salida XML debe estar "indentada" (con sangría), lo que facilita la lectura del XML generado.
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        // Activa la indentación
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        /*no siempre el XML se indenta correctamente porque depende del procesador Transformer que se esté usando 
+        (por ejemplo, el de Apache Xalan o el incorporado en tu JDK). Por eso se añaden las lineas siguientes:*/
+        // Indica cuántos espacios usar (4 es un valor típico)
+        transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+        // (Opcional) Añade declaración XML
+        transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+        transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+
         //Se establece la fuente de datos, que en este caso es el documento XML en memoria (doc).
         DOMSource source = new DOMSource(doc);
 

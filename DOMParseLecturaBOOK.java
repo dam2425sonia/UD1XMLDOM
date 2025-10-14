@@ -53,6 +53,7 @@ public class DOMParseLecturaBOOK {
 
                     //Obtiene el atributo id del elemento Book.
                     System.out.println("ID : "+ eElement.getAttribute("id")); 
+                    System.out.println("NAME : "+ eElement.getAttribute("name")); 
                     
                     //Accede al contenido del primer (y único) elemento Author dentro del elemento Book. 
                     //Lo mismo aplica para los elementos Title, Genre, Price, PublishDate, y Description.
