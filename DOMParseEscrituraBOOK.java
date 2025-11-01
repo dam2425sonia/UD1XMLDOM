@@ -139,8 +139,6 @@ public class DOMParseEscrituraBOOK {
         //La siguiente línea se utiliza para configurar el formato de salida de un documento XML cuando se utiliza un transformador
         //esta línea establece que la salida XML debe estar "indentada" (con sangría), lo que facilita la lectura del XML generado.
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-        // Activa la indentación
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
         /*no siempre el XML se indenta correctamente porque depende del procesador Transformer que se esté usando 
         (por ejemplo, el de Apache Xalan o el incorporado en tu JDK). Por eso se añaden las lineas siguientes:*/
         // Indica cuántos espacios usar (4 es un valor típico)
